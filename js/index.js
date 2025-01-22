@@ -5,7 +5,7 @@ let intervalo;
 
 function transicion(){
     let imagen = `imagen_${(frame % 8) +1}.jpg`;
-    animacion.style.backgroundImage = `url("../img_animacion/${imagen}")`;
+    animacion.style.backgroundImage = `url("../img/${imagen}")`;
 }
 
 animacion.addEventListener("dblclick", function(){
