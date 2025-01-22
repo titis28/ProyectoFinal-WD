@@ -1,10 +1,197 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <title>RecetasGo</title>
+    <link rel="stylesheet" href="css/estilos.css">
 </head>
 <body>
-$END$
+<header>
+    <nav>
+        <img src="img/logo.jpeg" alt="Logo" id="logo">
+    </nav>
+</header><br>
+<div class="contenedor-animacion">
+    <div id="marco">
+        <div id="animacion"></div>
+    </div>
+</div>
+<button type="button" id="boton" onclick="cambiarFondo()">Cambiar Fondo</button>
+<div class="bienvenida" id="cuadrado">
+    <h1>¡Bienvenidos a RecetasGo!</h1>
+    <p>Tu espacio para descubrir recetas fáciles, rápidas y deliciosas.
+        Aquí encontrarás todo lo que necesitas para sorprender a tus seres queridos con platos sencillos pero llenos de sabor.
+        ¡No importa si eres un experto o un principiante en la cocina, en RecetasGo tenemos opciones para todos!
+        Explora, cocina y disfruta. ¡Que comience la aventura culinaria!</p>
+</div>
+<button type="button" id="boton2" onclick="transformarElemento()">Transformar</button>
+
+<div id="contenedor-recetas">
+    <div class="receta">
+        <div id="burrito">
+            <h2>Burritos de pollo y queso</h2>
+            Tiempo: 5 minutos <br>
+            Ingredientes (para 2 personas):
+            <ul>
+                <li>6 tortillas grandes de harina de trigo</li>
+                <li>3 filetes de pollo</li>
+                <li>1 cebolla</li>
+                <li>2 dientes de ajo</li>
+                <li>200 gramos de queso cheddar rallado</li>
+                <li>1 cucharada de aceite de oliva</li>
+                <li>El zumo de 1 limón</li>
+                <li>Sal</li>
+                <li>Pimienta negra molida</li>
+                <li>Crema agria</li>
+                <li>Salsa picante</li>
+                <li>Cilantro</li>
+            </ul>
+            Elaboración<br>
+            <p>Paso 1. Comienza por precalentar el horno a 175ºC. Los burritos se pueden cocinar también en la freidora de aire. Pon una cucharada de aceite de oliva en una sartén a fuego medio. Cuando esté caliente pon la cebolla picada y sofríe hasta que esté tierna. Añade el ajo laminado y cocina durante un minuto más.<br>
+                <br>Paso 2. Cuando el sofrito de cebolla y ajo esté listo, añade el pollo troceado, pon una pizca de sal y pimienta y cocina. Agrega el zumo de limón y termina de hacer.<br>
+                <br>Paso 3. Extiende una tortilla de trigo, pon encima la mezcla de pollo que has cocinado y cubre con queso cheddar. Enrolla el burrito con cuidado y ponlo en una fuente de horno. Haz lo mismo con el resto.<br>
+                <br>Paso 4. Espolvorea sobre los burritos un poco más de queso cheddar y una pizca de cilantro picado, y hornéalos durante 15 minutos, hasta que el queso se derrita.<br>
+                <br>Paso 5. Una vez horneados los burritos, sírvelos acompañados de crema agria o salsa picante, o ambas.
+            </p>
+        </div>
+        <img src="img/burrito.jpg" alt="Burrito">
+    </div>
+
+    <div class="receta">
+        <div id="patatas">
+            <h2>Patatas rellenas de carne picada con portobellos y queso</h2>
+            Tiempo: 20 minutos <br>
+            Ingredientes (para 4 personas):
+            <ul>
+                <li>6-8 patatas medianas, dependiendo del tamaño</li>
+                <li>200 gramos de carne picada de ternera</li>
+                <li>200 gramos de tomate frito</li>
+                <li>4 champiñones portobello</li>
+                <li>Aceite de oliva</li>
+                <li>Pimienta, sal</li>
+            </ul>
+            Elaboración<br>
+            <p>Paso 1. Lava bien las patatas, sécalas y pínchalas varias veces con la punta de un cuchillo. Envuélvelas en film o cúbrelas con una tapa apta para microondas y cuécelas durante 4 minutos.<br>
+                <br>Paso 2. Dales la vuelta y prosigue la cocción 3-5 minutos, según el tipo de patata y de su tamaño. Retíralas y espera a que se templen. <br>
+                <br>Paso 3. En una sartén, pon 1 cucharada de aceite y caliéntalo. Añade la carne picada y saltéala un par de minutos, sin dejar de remover para que quede suelta. <br>
+                <br>Paso 4. Añade el tomate frito, salpimienta al gusto y mezcla.<br>
+                <br>Paso 5. Limpia los champiñones, lávalos, sécalos y córtalos en láminas finas.<br>
+                <br>Paso 6. Corta las patatas por la mitad a lo largo; retírales un poco de la pulpa con una cucharita y mézclala con el sofrito de carne y tomate.<br>
+                <br>Paso 7. Salpimienta el interior de las patatas y rellénalas con la preparación anterior. Reparte por encima las láminas de champiñón y ralla el queso curado sobre ellas.<br>
+                <br>Paso 8. Precalienta el horno a 180 °C, coloca dentro las patatas y caliéntalas 2 o 3 minutos, hasta que el queso se funda. Decora con el tomillo, lavado y troceado, y sirve.<br>
+            </p>
+        </div>
+        <img src="img/patatas.jpg" alt="Patatas">
+    </div>
+
+    <div class="receta">
+        <div id="arroz">
+            <h2>Arroz con pollo al curry</h2>
+            Tiempo: 20 minutos <br>
+            Ingredientes (para 4 personas):
+            <ul>
+                <li>800 g de arroz blanco</li>
+                <li>2 pechugas de pollo</li>
+                <li>150 gramos de champiñones</li>
+                <li>Curry en polvo</li>
+                <li>Aceite, sal y pimienta</li>
+            </ul>
+            Elaboración<br>
+            <p>Paso 1. Limpia las pechugas y córtalas en dados, sazónalos y espolvorea con un poco de curry.<br>
+                <br>Paso 2. Limpia, lava y seca los champiñones. Córtalos en láminas, saltéalos en una sartén con un hilo de aceite durante 2 minutos, salpimiéntalos y retíralos. <br>
+                <br>Paso 3. Añade el pollo a la sartén, saltéalo durante 5 minutos y retíralo.<br>
+                <br>Paso 4. Agrega entonces un poco más de aceite y saltea el arroz. Espolvoréalo con curry y remueve. Añade el pollo y los champiñones, mezcla bien y sirve.<br>
+            </p>
+        </div>
+        <img src="img/arroz.jpg" alt="Arroz">
+    </div>
+
+    <div class="receta">
+        <div id="timbal">
+            <h2>Timbal de arroz y lomo caramelizado</h2>
+            Tiempo: 20 minutos <br>
+            Ingredientes (para 2 personas):
+            <ul>
+                <li>300 gramos de lomo de cerdo</li>
+                <li>50 gramos de miel</li>
+                <li>75 ml de salsa de soja suave</li>
+                <li>2 vasitos de arroz para microondas</li>
+                <li>2 tallos de cebollino</li>
+                <li>Aceite de oliva</li>
+            </ul>
+            Elaboración<br>
+            <p>Paso 1. Corta el lomo de cerdo en tiras gruesas. Calienta un fondo de aceite en una sartén, añade las tiras de carne y saltéalas unos 5 minutos, removiendo, hasta que estén doradas.<br>
+                <br>Paso 2. Agrega la miel, mezcla y cuece a fuego suave hasta que caramelicen. Añade la salsa de soja y prosigue la cocción 2 minutos más.<br>
+                <br>Paso 3. Calienta los vasitos de arroz 1 minuto en el microondas. Lava el cebollino, sécalo y pícalo menudo; mézclalo con el arroz.<br>
+                <br>Paso 4. Monta 2 timbales colocando una capa de arroz con cebollino en el fondo de 2 platos, formando un cuadrado, y añade encima el lomo caramelizado.<br>
+                <br>Paso 5. Espolvorea con el sésamo y decora con los germinados lavados. ¡Y listo!<br>
+            </p>
+        </div>
+        <img src="img/timbal.jpg" alt="Timbal">
+    </div>
+
+    <div class="receta">
+        <div id="croquetas">
+            <h2>Croquetas de queso y calabacín</h2>
+            Tiempo: 20 minutos <br>
+            Ingredientes (para 4 personas):
+            <ul>
+                <li>1 calabacín</li>
+                <li>150 gramos de queso gruyere</li>
+                <li>1 ajo</li>
+                <li>40 gramos de harina</li>
+                <li>40 gramos de mantequilla</li>
+                <li>200 ml de leche</li>
+                <li>100 gramos de pan rallado</li>
+                <li>1 huevo</li>
+                <li>Albahaca</li>
+                <li>Pimienta</li>
+                <li>Aceite y sal</li>
+            </ul>
+            Elaboración<br>
+            <p>Paso 1. Lava, despunta y corta el calabacín en daditos. Pela y pica el ajo. Calienta la mantequilla en una sartén y sofríe ambos un par de minutos. Agrega la harina y dórala ligeramente durante 1 minuto. Vierte la leche caliente y cuece, sin dejar de remover, hasta que espese.<br>
+                <br>Paso 2. Vierte la preparación en una fuente y deja que se entibie. Añade el queso cortado en daditos, unas hojitas de albahaca lavada y picada y salpimienta, remueve y extiende bien la masa. Déjala reposar durante 4 horas en la nevera.<br>
+                <br>Paso 3. Forma las croquetas, pásalas por el huevo batido y el pan rallado y fríelas en abundante aceite caliente hasta que se doren. Escúrrelas y sírvelas con un poco más de albahaca.<br>
+            </p>
+        </div>
+        <img src="img/croquetas.jpg" alt="croquetas">
+    </div>
+
+    <div class="receta">
+        <div id="espinaca">
+            <h2>Espinacas a la crema con almendras
+            </h2>
+            Tiempo: 20 minutos <br>
+            Ingredientes (para 4 personas):
+            <ul>
+                <li>500 gramos de espinacas frescas</li>
+                <li>2 dientes de ajo</li>
+                <li>1 cebolla</li>
+                <li>80 gramos de almendras fileteadas</li>
+                <li>250 ml de leche</li>
+                <li>50 gramos de harina</li>
+                <li>40 gramos de mantequilla</li>
+                <li>125 gramos de taquitos de jamón de pavo</li>
+                <li>Nuez moscada</li>
+                <li>Aceite de oliva</li>
+                <li>Sal y pimienta</li>
+            </ul>
+            Elaboración<br>
+            <p>Paso 1. Pela los ajos y pícalos. Calienta una sartén con un hilo de aceite. Agrega las almendras y saltéalas durante 2 minutos. Retíralas, añade un chorrito más de aceite, rehoga el pavo 1 minuto y retíralo. Luego, sofríe el ajo y saltea las espinacas, lavadas y troceadas, en varias tandas.<br>
+                <br>Paso 2. Pela la cebolla, pícala y póchala durante 10 minutos en otra sartén con 1 cucharada de aceite. Agrega la mantequilla y, una vez fundida, incorpora la harina removiendo constantemente para evitar los grumos.<br>
+                <br>Paso 3. Vierte la leche y cuece durante 4 minutos a fuego lento. Condimenta con nuez moscada, sal y pimienta. Agrega las espinacas a la besamel, mezcla y sirve en platos hondos o cuencos con las almendras y el jamón de pavo.<br>
+                <br><b>El truco: </b> para que las espinacas no suelten demasiada agua, retíralas de la sartén una vez salteadas.<br>
+            </p>
+        </div>
+        <img src="img/espinaca.jpg" alt="espinaca">
+    </div>
+
+</div>
+<footer>
+    <h3><a href="html/recetas.html">Haz clic aquí para descubrir más Recetas</a><br><br>
+    <a href="html/comparte.html">Comparte una receta con nosotros</a></h3><br>
+    <p>Fuente o link de consulta:<a href="https://www.elmueble.com/recetas/recetas-faciles-rapidas_5336"> 41 recetas fáciles y rápidas que puedes hacer en menos de 20 minutos</a></p>
+</footer>
+<script src="js/index.js"></script>
 </body>
 </html>
