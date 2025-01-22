@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Recetas</title>
+    <link rel="stylesheet" href="../css/estilos2.css">
+</head>
+<body id="cuerpo">
+<button type="button" id="boton">Cambiar fondo</button>
+<div id="contenedor">
+    <h1>¡Inspírate y cocina con RecetasGo!</h1>
+    <p>En RecetasGo, queremos hacer de tu experiencia en la cocina algo fácil
+        y emocionante. Descubre cientos de recetas organizadas por nombre,
+        ingredientes, porciones y tiempo todo al alcance de un clic.</p>
+    <br><br>
+    <label for="receta">Selecciona el nombre de una receta:</label>
+    <select id="receta">
+        <option> --- Selecciona una opción --- </option>
+        <option value="0">Ensalada César</option>
+        <option value="1">Tacos de pollo</option>
+        <option value="2">Espagueti a la boloñesa</option>
+        <option value="3">Sopa de verduras</option>
+        <option value="4">Tortilla de patatas</option>
+        <option value="5">Brownie de chocolate</option>
+    </select>
+
+    <label for="campo">Selecciona la información a mostrar: </label>
+    <select id="campo">
+        <option value="nombre">Nombre</option>
+        <option value="ingredientes">Ingredientes</option>
+        <option value="pasos">Pasos</option>
+        <option value="porciones">Porciones</option>
+        <option value="tiempo">Tiempo</option>
+        <option value="imagen">Link de Imagen</option>
+    </select>
+
+    <div id="resultado">
+        <label for="informacion">Información</label>
+        <textarea id="informacion" readonly></textarea>
+    </div>
+</div>
+<script src="../js/index2.js"></script>
+</body>
+</html>
